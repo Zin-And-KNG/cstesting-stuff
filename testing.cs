@@ -4,6 +4,6 @@ namespace testing
 {
     public class testing
     {
-        Console.WriteLine("Test")
+        Console.WriteLine("Test");
     }
 }
