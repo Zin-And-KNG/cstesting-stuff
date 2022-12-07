@@ -6,7 +6,7 @@ namespace Program
     {
         public static void Main(string[] args) 
         {
-            Console.WriteLine("Help me");
+            while(true){
             Console.WriteLine("What is the first number?");
             float num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("What is the second number?");
@@ -18,10 +18,17 @@ namespace Program
                 Console.WriteLine(num1 / num2);
             }else if (operation == "*") {
                 Console.WriteLine(num1 * num2);
+            }else if (operation == "x") {
+                Console.WriteLine(num1 * num2);
             }else if (operation == "+"){
                 Console.WriteLine(num1 + num2);
             }else if (operation == "-") {
                 Console.WriteLine(num1 - num2);
+            }else {
+                Console.WriteLine("Not A Valid Option");
+                continue;
+            }
+            break;
             }
             
         }
