@@ -1,3 +1,4 @@
 bin/
 obj/
 test/
+/new react app test/testing/node_modules
