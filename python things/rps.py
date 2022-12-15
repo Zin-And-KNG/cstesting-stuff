@@ -1,13 +1,11 @@
 import random
 import time
-oops = ["safe", "e", "jik", "dead"]
 user_action = input("Enter a choice (rock, paper, scissors): ")
 possible_actions = ["rock", "paper", "scissors"]
 if user_action not in possible_actions:
-    print("you died from gun")
+    print("Not Valid!")
     quit()
 computer_action = random.choice(possible_actions)
-random_chanse = random.choice(oops)
 print("Rock...")
 time.sleep(0.5)
 print("Paper..")
@@ -16,11 +14,6 @@ print("Scissors...")
 time.sleep(0.5)
 print("Shoot!")
 time.sleep(0.2)
-if random_chanse == "dead":
-    print("*BANG*")
-    time.sleep(2)
-    print("OH SHOOT! I HAD A GUN! (you died)")
-    quit()
 print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
 
 if user_action == computer_action:
